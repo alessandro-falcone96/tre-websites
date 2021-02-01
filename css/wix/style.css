@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+/* Classi Generali */
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+li{
+  display: inline-block;
+  line-height: 75px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Header Alto */
+.header-alto{
+  height: 75px;
+  background-color: white;
+}
+
+.lista-sinistra{
+  float: left;
+}
+.lista-destra{
+  float: right;
+}
+
+#nome-azienda{
+  margin: 0px 45px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0D3C60;
+}
+#barra-verticale{
+  margin: 0px 20px;
+}
+#link-scopri{
+  margin-left: 15px;
+  margin-right: 35px;
+  text-decoration: underline;
+}
+#bottone-modifica{
+  margin-right: 45px;
+  color: white;
+  background-color: #4D8AFF;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+/* Header Basso */
+.header-basso{
+  height: 75px;
+  background-color: #0D3C60;
+}
+.header-basso ul{
+  float: right;
+}
+.header-basso ul li a{
+  color: white;
+}
+#titolo{
+  margin-right: 450px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+#titolo-azzurro{
+  color: #7ECBDA;
+}
+.menu{
+  margin: 0px 15px;
+}
+
+#login{
+  margin-right: 100px;
+  margin-left: 30px;
+  color: #7ECBDA;
+}
+.fa-sign-in-alt{
+  margin-right: 10px;
+}
+
+/* Main */
+/* Section */
+#sfondo{
+  position: relative;
+  height: 100vh;
+  background-image: url("../../img/wix/sfondo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#barra-superficie{
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#barra-superficie h5{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #0D3C60;
+}
+#barra-superficie h2{
+  font-size: 70px;
+  font-weight: normal;
+  color: #0D3C60;
+}
+
+
+/* 3 Colonne */
+#tre-colonne{
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#tre-colonne h3{
+  color: #D1DFEB;
+  text-transform: uppercase;
+  margin: 40px 0px;
+  font-size: 30px;
+  font-weight: normal;
+}
+#tre-colonne p{
+  color: white;
+  padding: 0px 30px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.colonna-centrale{
+  margin: 0px 5%;
+}
+.colonna{
+  width: 30%;
+  float: left;
+  background-color: #0D3C60;
+}
+.colonna a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #39739A;
+  margin: 40px 0px;
+}
+
+#about-us{
+  background-color: #D1DFEB;
+  text-align: center;
+}
+#about-us h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #0D3C60;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#about-us p{
+  color: #39739A;
+  width: 40%;
+  margin: 20px auto;
+  text-align: justify;
+}
+#about-us a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #0D3C60;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+
+footer{
+  background-color: #0D3C60;
+}
+footer h2{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+footer .container{
+  width: 90%;
+  margin: auto;
+}
+
+
+.map, .form{
+  float: left;
+}
+
+.map{
+  width: 50%;
+}
+.form{
+  /* background-color: green; */
+  width: 30%;
+  padding-left: 25px;
+  margin-bottom: 200px;
+}
+.form span{
+  color: yellow;
+}
+.form p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form label{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.form #bottone-submit{
+  margin: 10px 0px;
+  padding: 10px 45px;
+  background-color: #39739A;
+  border: 1px solid #39739A;
+  margin-left: 60%;
+}
+.form label, .form input{
+  display: block;
+}
+.form input, .form textarea{
+  padding: 8px;
+}
+.form p, .form label, .form #bottone-submit{
+  color: white;
+}
+
+.form .larghezza{
+  width: 100%;
+}
+
+.barra-footer{
+  color: white;
+}
+.barra-footer .barra-sinistra{
+  float: left;
+  height: 100px;
+}
+.barra-footer .barra-destra{
+  float: right;
+}
+.barra-footer .barra-destra a{
+  padding: 0px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.fa-question-circle{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  /* color: #0D3C60; */
+  color: white;
+}

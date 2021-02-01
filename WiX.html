@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WiX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/wix/style.css">
+  </head>
+  <body>
+
+    <header>
+
+      <div class="header-alto clearfix">
+
+        <div class="lista-sinistra">
+          <ul>
+            <li><a id="nome-azienda" href="#">WiX</a></li>
+            <li><a id="display-desktop" href="#"><i class="fas fa-desktop fa-2x"></i></a></li>
+            <li id="barra-verticale">|</li>
+            <li><a id="display-mobile" href="#"><i class="fas fa-mobile-alt fa-2x"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="lista-destra">
+          <ul>
+            <li>Clicca su modifica e crea il tuo sito web</li>
+            <li><a id="link-scopri" href="#">Scopri di più</a></li>
+            <li><a id="bottone-modifica" href="#">Modifica questo sito</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <nav class="header-basso clearfix">
+        <ul>
+          <li><a id="titolo" href="#">James <span id="titolo-azzurro">Consulting</span></a></li>
+          <li><a class="menu" href="#">About</a></li>
+          <li><a class="menu" href="#">Services</a></li>
+          <li><a class="menu" href="#">Projects</a></li>
+          <li><a class="menu" href="#">Clients</a></li>
+          <li><a class="menu" href="#">Contact</a></li>
+          <li><a id="login" href="#"><i class="fas fa-sign-in-alt"></i>Log In</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section id="sfondo">
+        <div id="barra-superficie">
+          <h5>Developing Innovative Strategies</h5>
+          <h2>Achieving Growth</h2>
+        </div>
+      </section>
+
+      <section id="tre-colonne" class="clearfix">
+
+        <div class="colonna">
+          <h3>Services</h3>
+          <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great palce for you to tell a story and let youe users know a little more about you.</p>
+          <a href="#">More Info</a>
+        </div>
+
+        <div class="colonna colonna-centrale">
+          <h3>Project</h3>
+          <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great palce for you to tell a story and let youe users know a little more about you.</p>
+          <a href="#">More Info</a>
+        </div>
+
+        <div class="colonna">
+          <h3>Clients</h3>
+          <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great palce for you to tell a story and let youe users know a little more about you.</p>
+          <a href="#">More Info</a>
+        </div>
+
+      </section>
+
+      <section id="about-us">
+        <h2>About Us</h2>
+        <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great palce for you to tell a story and let youe users know a little more about you.</p>
+        <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide- Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors.</p>
+        <a href="#">Read More</a>
+      </section>
+
+
+    </main>
+
+    <footer>
+
+      <h2>Contact Us</h2>
+
+      <div class="container clearfix">
+
+        <div class="map">
+
+          <div id="googleMap" style="width:100%;height:600px;"></div>
+
+          <script>
+            function myMap() {
+              var mapProp= {
+                center:new google.maps.LatLng(45.80383,13.5203717),
+                zoom:10,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBLv9TwpiYO6iP4qEVlN_3md5CLgJ0vp50&callback=myMap"></script>
+
+        </div>
+        <div class="form">
+          <p>500 Terry Francois Street, San Francisco, CA 94159<br>info@mysite.com Tel: 123-456-7890</p>
+          <label for="name">First Name <span>*</span></label>
+          <input class="larghezza" type="text" name="name" value="" placeholder="First Name">
+          <label for="surname">Last Name <span>*</span></label>
+          <input class="larghezza" type="text" name="surname" value="" placeholder="Last Name">
+          <label for="email">Email <span>*</span></label>
+          <input class="larghezza" type="text" name="email" value="" placeholder="Email">
+          <label for="subject">Subject</label>
+          <input class="larghezza" type="text" name="subject" value="" placeholder="Subject">
+          <label for="message">Message</label>
+          <textarea class="larghezza" name="message" rows="8" placeholder="Type your message here..."></textarea>
+          <input id="bottone-submit" type="submit" name="submit" value="Submit">
+        </div>
+
+        <div class="barra-footer clearfix">
+          <div class="barra-sinistra">
+            <p>© 2023 by James Consulting. Proudly created with Wix.com</p>
+          </div>
+          <div class="barra-destra">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#"><i class="fas fa-question-circle fa-3x"></i></a>
+
+    </footer>
+
+
+
+  </body>
+</html>

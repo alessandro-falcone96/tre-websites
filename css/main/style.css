@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 40%;
+  margin: auto;
+  height: 33.33333vh;
+  text-align: center;
+  line-height: 33.33333vh;
+}
+.container a{
+  text-decoration: none;
+}
+
+
+
+.link-freeze{
+  border: 5px solid #CB3362;
+  margin-bottom: 1px;
+}
+
+
+.link-zizurz h1{
+  text-transform: uppercase;
+  color: white;
+  background-color: #222942;
+}
+
+
+.link-wix h1{
+  color: #0D3C60;
+  background-color: white;
+  border: 10px solid #0D3C60;
+}

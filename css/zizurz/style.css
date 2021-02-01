@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 200px;
+  background-color: #4D8E96;
+  position: relative;
+}
+
+
+/* Header Barra Fissa */
+.barra-fissa{
+  width: 100%;
+  background-color: #E6E7E9;
+  border-bottom: 1px dashed grey;
+  position: fixed;
+  z-index: 1;
+}
+.barra-fissa a{
+  color: grey;
+  text-decoration: none;
+}
+#link-templates{
+  color: #4E6779;
+}
+
+header .barra-fissa h3{
+  font-size: 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 10%;
+  margin-right: 35%;
+  padding: 10px 0px;
+}
+header .barra-fissa span{
+  text-transform: uppercase;
+  padding: 0px 15px;
+}
+
+
+/* Header */
+
+nav{
+  width: 80vw;
+  margin: auto;
+}
+nav h1{
+  color: white;
+  width: 25%;
+  font-size: 75px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 15px;
+  background-color: #191E31;
+  position: absolute;
+  bottom: -15px;
+}
+nav ul{
+  float: right;
+  margin-top: 150px;
+}
+nav li{
+  display: inline-block;
+  margin: 0px 10px;
+}
+nav ul a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #191E31;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+
+/* Main */
+main{
+  width: 80vw;
+  margin: auto;
+  /* background-color: grey; */
+  height: 1000px;
+}
+
+/* Sezione 1 */
+main .sezione-1{
+  height: 450px;
+  width: 100%;
+  background-image: url("../../img/zizurz/foto-header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px solid #4D8E96;
+  margin-top: 50px;
+}
+main .sezione-1 h2{
+  width: 40%;
+  font-size: 45px;
+  /* background-color: lightblue; */
+  color: #191E31;
+  margin-top: 150px;
+  margin-left: 500px;
+}
+
+/* Sezione 2 */
+.sezione-2{
+  margin-top: 35px;
+}
+.sezione-2::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.sezione-2 .contenuto-quadrato{
+  float: left;
+  /* width: 200px;
+  height: 200px; */
+  width: 25%;
+  padding: 0px 33px;
+}
+.sezione-2 .contenuto-quadrato img{
+  /* object-fit: cover; */
+  border: 5px solid #4D8E96;
+}
+.sezione-2 .contenuto-quadrato p{
+  line-height: 25px;
+  margin-top: 10px;
+}
+.sezione-2 .contenuto-quadrato a{
+  color: black;
+}
+
+/* Sezione 3 */
+.sezione-3{
+  margin-top: 30px;
+}
+.sezione-3 .contenuto-sinistra{
+  width: calc(50% - 10px);
+  /* height: 750px; */
+  background-color: white;
+  float: left;
+  border: 5px solid #60B3BD;
+  margin: 0px 5px;
+}
+.sezione-3 .contenuto-sinistra .paragrafi p{
+  margin: 20px 10px;
+}
+.sezione-3 .contenuto-sinistra a{
+  color: black;
+}
+.sezione-3 .contenuto-destra-sopra{
+  width: calc(50% - 10px);
+  /* height: 250px; */
+  background-color: #519094;
+  float: left;
+  border: 5px solid #60B3BD;
+  margin: 0px 5px;
+  position: relative;
+}
+.sezione-3 .contenuto-destra-sopra p,
+.sezione-3 .contenuto-destra-sopra h5{
+  margin: 0px 25px;
+}
+.sezione-3 .contenuto-destra-sopra::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.sezione-3 .contenuto-destra-sotto{
+  width: calc(50% - 10px);
+  height: 250px;
+  background-color: #519094;
+  float: left;
+  border: 5px solid #60B3BD;
+  margin: 20px 5px;
+  position: relative;
+}
+.sezione-3 .contenuto-destra-sotto span{
+  color: blue;
+  text-decoration: underline;
+}
+
+.sezione-3 .contenuto-sinistra .semiheader{
+  position: relative;
+}
+.sezione-3 .contenuto-sinistra .semiheader::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.sezione-3 .contenuto-sinistra .semiheader h4,
+.sezione-3 .contenuto-destra-sopra h4{
+  color: white;
+  background-color: #191e31;
+  width: 25%;
+  font-size: 25px;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  text-align: center;
+  padding: 5px;
+}
+.sezione-3 .contenuto-sinistra .semiheader img{
+  margin-top: 35px;
+  margin-left: 15px;
+  float: left;
+}
+.sezione-3 .contenuto-sinistra .semiheader h5{
+  float: left;
+  margin-top: 35px;
+  margin-left: 15px;
+  font-size: 25px;
+}
+.sezione-3 .contenuto-sinistra .paragrafi{
+  margin: 20px 15px;
+}
+.sezione-3 .contenuto-sinistra .paragrafi p{
+  padding: 10px 0px;
+}
+
+.sezione-3 .contenuto-destra-sopra p{
+  margin-top: 35px;
+  margin-left: 15px;
+  color: white;
+  padding: 15px 0px;
+}
+.sezione-3 .contenuto-destra-sopra h5{
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.sezione-3 .contenuto-destra-sotto{
+  background-image: url("../../img/zizurz/foto-6.png");
+  background-repeat: no-repeat;
+}
+.sezione-3 .contenuto-destra-sotto p{
+  width: 50%;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
+
+/* Footer */
+footer{
+  margin-top: 600px;
+  height: 200px;
+  background-color: #519094;
+  text-align: center;
+  position: relative;
+}
+
+footer h6{
+  color: white;
+  line-height: 200px;
+  font-size: 15px;
+}
+
+.contenitore{
+  height: 75px;
+  width: 250px;
+  background-color: #387982;
+  text-align: center;
+  position: absolute;
+  top: 75px;
+  right: 250px;
+}
+.contenitore i{
+  line-height: 55px;
+}
+.contenitore a{
+  text-decoration: none;
+  color: #0E454B;
+}
+.contenitore i{
+  padding: 10px;
+}
